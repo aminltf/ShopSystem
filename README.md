@@ -9,20 +9,3 @@ It follows **Modular Monolith and Clean Architecture** principles, utilizing **C
 ✅ **MediatR** for decoupled request handling  
 ✅ **Entity Framework Core** for database interactions  
 ✅ **SOLID Principles** for clean and maintainable code  
-
----
-
-## 📂 Project Structure
-📦 ShopSystem
-┣ 📂 src
-┃ ┣ 📂 ShopSystem.API → API Layer (GraphQL)
-┃ ┣ 📂 ShopSystem.Application → Business Logic Layer (CQRS, MediatR)
-┃ ┣ 📂 ShopSystem.Domain → Domain Models and Value Objects
-┃ ┣ 📂 ShopSystem.Infrastructure → Database and Identity Management (EF Core)
-┃ ┣ 📂 ShopSystem.Modules → Modular Feature Implementations
-┃ ┃ ┣ 📂 🛒 Products → Products Module
-┃ ┃ ┣ 📂 📦 Orders → Orders Module
-┃ ┃ ┣ 📂 👥 Customers → Customers Module
-┃ ┗ 📂 ShopSystem.Persistence → Database Context and Configurations
-┣ 📂 tests → Unit Tests
-┗ 📜 README.md → Documentation
